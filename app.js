@@ -80,7 +80,7 @@ function reiniciarJogo(){
     camuflador = parseInt(Math.random() * 100);
     numeroExibido = camuflador + numeroSecreto
     limpaCampo();
-    let tentativas = 1;
+    tentativas = 1;
     exibirMensagemInicial();
     document.getElementById("reiniciar").setAttribute("disabled", true)
 }
