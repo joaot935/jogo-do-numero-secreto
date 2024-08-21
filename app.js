@@ -32,6 +32,10 @@ exibirMensagemInicial();
 
 function verificarChute() {
     let chute = document.querySelector('input').value;
+    if(chute == ""){
+        exibirTextoNaTela("p", "Por favor, digite um número.")
+    }
+    else{
     if (chute == numeroSecreto){
         exibirTextoNaTela("h1", "Acertou!")
         let mensagemTentativa = `Você descobriu o número secreto em ${tentativas} ${palavraTentativa}!`
@@ -50,6 +54,7 @@ function verificarChute() {
         }
         limpaCampo()
     }
+}
 }
 
 function gerarNumeroAleatorio() {
